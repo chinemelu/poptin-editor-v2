@@ -1,10 +1,11 @@
 const path = require('path')
 const Webpack = require('webpack')
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = {
     mode: 'development',
-    entry: './src/main.js',
+    entry: './src/main.ts',
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js'
@@ -29,7 +30,18 @@ module.exports = {
                 // AND `<script>` blocks in `.vue` files
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+            },
+                // this will apply to both plain `.scss` files
+                // AND `<style lang="scss">` blocks in `.vue` files
+            {
+                test: /\.scss$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
             },
                 // this will apply to both plain `.css` files
                 // AND `<style>` blocks in `.vue` files
@@ -39,12 +51,29 @@ module.exports = {
                     'vue-style-loader',
                     'css-loader'
                 ]
-            }
+            },
+            {
+                test: /\.ts$/,
+                use: {
+                    loader: 'ts-loader',
+                    options: {
+                        appendTsSuffixTo: [/\.vue$/],
+                    }
+                },
+                exclude: /node_modules/,
+            },
         ]
+    },
+    resolve: {
+        extensions: ['.ts', '.js'],
+        alias: {
+            '@': path.resolve(__dirname, 'src')
+        }
     },
     plugins: [
         // make sure to include the plugin!
         new VueLoaderPlugin(),
+        // new HtmlWebpackPlugin(),
         new Webpack.DefinePlugin({
             __VUE_OPTIONS_API__: true, 
             __VUE_PROD_DEVTOOLS__: false,

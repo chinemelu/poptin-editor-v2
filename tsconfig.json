@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "isolatedModules": true,
+      "verbatimModuleSyntax": true,
+      "strict": true,
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "moduleResolution": "node",
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.vue",
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
