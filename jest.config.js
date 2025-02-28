@@ -89,13 +89,15 @@ const config = {
   // ],
   moduleFileExtensions: [
 		"ts",
-		"js"
+		"js",
+    "vue"
 	],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
   moduleNameMapper: {
-    "^@vue/test-utils": "<rootDir>/node_modules/@vue/test-utils/dist/vue-test-utils.cjs.js"
+    "^@vue/test-utils": "<rootDir>/node_modules/@vue/test-utils/dist/vue-test-utils.cjs.js",
+    "^@/(.*)$": "<rootDir>/src/$1"
 	},
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -189,8 +191,9 @@ const config = {
 			"ts-jest",
 			{
 				"isolatedModules": true
-			}
-		]
+			},
+		],
+    '^.+\\.vue$': '@vue/vue3-jest',
 	},
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
