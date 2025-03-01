@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/router/index.ts</title>
+    <title>Code coverage report for src/components/About.vue</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/router</a> index.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> About.vue</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/22</span>
+                <span class='fraction'>0/28</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/22</span>
+                <span class='fraction'>0/28</span>
             </div>
         
             
@@ -84,7 +84,13 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -105,28 +111,40 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import { createWebHistory, createRouter } from 'vue-router'</span></span></span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >&lt;template&gt;</span></span></span>
+<span class="cstat-no" title="statement not covered" >  &lt;p class="text-3xl font-bold underline"&gt;{{ count.toFixed(2) }}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >  &lt;base-input @update:model-value="handleModelUpdate" :model-value="name"/&gt;</span>
+<span class="cstat-no" title="statement not covered" >  &lt;button @click="increment"&gt;click me&lt;/button&gt;</span>
+<span class="cstat-no" title="statement not covered" >&lt;/template&gt;</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >import Home from '@/components/Home.vue'</span>
-<span class="cstat-no" title="statement not covered" >import About from '@/components/About.vue'</span>
+<span class="cstat-no" title="statement not covered" >&lt;script setup lang="ts"&gt;</span>
+<span class="cstat-no" title="statement not covered" >import { ref } from 'vue'</span>
+<span class="cstat-no" title="statement not covered" >import type { Ref } from 'vue'</span>
+<span class="cstat-no" title="statement not covered" >import BaseInput from '@/components/BaseInput.vue';</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >const routes = [</span>
-<span class="cstat-no" title="statement not covered" >    { </span>
-<span class="cstat-no" title="statement not covered" >        path: '/', </span>
-<span class="cstat-no" title="statement not covered" >        component: Home,</span>
-<span class="cstat-no" title="statement not covered" >    },</span>
-<span class="cstat-no" title="statement not covered" >    {</span>
-<span class="cstat-no" title="statement not covered" >        path: '/about',</span>
-<span class="cstat-no" title="statement not covered" >        component: About</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >]</span>
+<span class="cstat-no" title="statement not covered" >function increment() {</span>
+<span class="cstat-no" title="statement not covered" >  count.value++</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >const router = createRouter({</span>
-<span class="cstat-no" title="statement not covered" >  history: createWebHistory(),</span>
-<span class="cstat-no" title="statement not covered" >  routes,</span>
-<span class="cstat-no" title="statement not covered" >})</span>
+<span class="cstat-no" title="statement not covered" >function handleModelUpdate(val: string) {  </span>
+<span class="cstat-no" title="statement not covered" >  console.log('name', name.value, 'val', val);</span>
+<span class="cstat-no" title="statement not covered" >  name.value = val</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" >let count: Ref&lt;number&gt; = ref(1)</span>
+<span class="cstat-no" title="statement not covered" >let name: Ref&lt;string&gt; = ref('')</span>
+<span class="cstat-no" title="statement not covered" >&lt;/script&gt;</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >export default router</span></pre></td></tr></table></pre>
+<span class="cstat-no" title="statement not covered" >&lt;style lang="scss" scoped&gt;</span>
+<span class="cstat-no" title="statement not covered" >button {</span>
+<span class="cstat-no" title="statement not covered" >  background-color: revert</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" >&lt;/style&gt;</span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
