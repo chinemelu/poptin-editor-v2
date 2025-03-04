@@ -8,7 +8,10 @@ module.exports = {
     entry: './src/main.ts',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        clean: {
+            keep: 'index.html'
+        }
     },
     devServer: {
         historyApiFallback: true,
@@ -53,14 +56,13 @@ module.exports = {
                 ]
             },
             {
-                test: /\.ts$/,
+                test: /\.tsx?$/,
                 use: {
-                    loader: 'ts-loader',
+                    loader: 'ts-loader?configFile=tsconfig.webpack.json',
                     options: {
                         appendTsSuffixTo: [/\.vue$/],
                     }
                 },
-                exclude: /node_modules/,
             },
         ]
     },

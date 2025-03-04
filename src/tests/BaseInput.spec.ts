@@ -6,7 +6,7 @@ import BaseInput from '@/components/BaseInput.vue'
     const wrapper = shallowMount(BaseInput, {
       props: {
         modelValue: '',
-        'onUpdate:modelValue': (e) => wrapper.setProps({ modelValue: e })
+        'onUpdate:modelValue': async (e: string) => await wrapper.setProps({ modelValue: e })
       },
     })
   

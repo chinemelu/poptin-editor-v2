@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1740803403060" clover="3.2.0">
-  <project timestamp="1740803403060" name="All files">
-    <metrics statements="122" coveredstatements="38" conditionals="8" coveredconditionals="1" methods="7" coveredmethods="0" elements="137" coveredelements="39" complexity="0" loc="122" ncloc="122" packages="4" files="9" classes="9"/>
+<coverage generated="1741068910807" clover="3.2.0">
+  <project timestamp="1741068910808" name="All files">
+    <metrics statements="125" coveredstatements="38" conditionals="9" coveredconditionals="1" methods="8" coveredmethods="0" elements="142" coveredelements="39" complexity="0" loc="125" ncloc="125" packages="4" files="10" classes="10"/>
     <package name="src">
       <metrics statements="25" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="App.vue" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/App.vue">
@@ -43,9 +43,9 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="72" coveredstatements="35" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="About.vue" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/components/About.vue">
-        <metrics statements="28" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="80" coveredstatements="35" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="App.vue" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/components/App.vue">
+        <metrics statements="19" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -65,15 +65,6 @@
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
       </file>
       <file name="BaseInput.vue" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/components/BaseInput.vue">
         <metrics statements="35" coveredstatements="35" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -113,8 +104,8 @@
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
       </file>
-      <file name="Home.vue" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/components/Home.vue">
-        <metrics statements="9" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="TheCanvas.vue" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/components/TheCanvas.vue">
+        <metrics statements="13" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -124,12 +115,32 @@
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="TheSidebar.vue" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/components/TheSidebar.vue">
+        <metrics statements="13" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.router">
-      <metrics statements="22" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="17" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="index.ts" path="/Users/chinemelunwosu/Desktop/poptin-editor-v2/src/router/index.ts">
-        <metrics statements="22" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="17" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -147,11 +158,6 @@
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.tests">
