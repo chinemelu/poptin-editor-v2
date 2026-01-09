@@ -1,1 +1,9 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif,
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}   

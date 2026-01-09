@@ -1,9 +1,9 @@
 <template>
     <header>
-        <nav></nav>
+        <span>I am the dog walker</span>
     </header>
-    <main>
-        <h1>Boomerang!</h1>
+    <main class=" main mt-5 text-2xl">
+       Boom
     </main>
     <footer>
 
@@ -14,6 +14,6 @@
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
